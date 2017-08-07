@@ -13,11 +13,6 @@
 	</cfoutput>
 </cfif>
 <!DOCTYPE html>
-<!--
-	Interphase by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
@@ -25,12 +20,11 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-				<noscript>
+		<noscript>
 			<link rel="stylesheet" href="../includes/css/skel.css" />
 			<link rel="stylesheet" href="/../../includes/css/style.css" />
 			<link rel="stylesheet" href="../includes/css/style-xlarge.css" />
 		</noscript>
-
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="../includes/js/jquery.min.js"></script>
 		<script src="../includes/js/skel.min.js"></script>
@@ -42,7 +36,6 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="../includes/css/style1.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		
 	</head>
 	<body class="landing">
 		<!-- Header -->
@@ -71,7 +64,7 @@
 						 <div class="modal-content">
 							<div class="modal-body">
 								<div class="logmod__wrapper">
-									<div class="logmod__container">
+									<div class="logmod__container" style="height:500px;">
 										<ul class="logmod__tabs">
 											<li data-tabtar="lgm-2"><a href="#">Login as User</a></li>
 											<li data-tabtar="lgm-1"><a href="#">Login as Company Admin</a></li>
@@ -101,14 +94,6 @@
 														<div class="simform__actions">
 															  <input id = "adminLogIn" class="sumbit" name="commitSignin1" type="submit" value="Admin Login" />
 														</div>
-														<div class="logmod__alter">
-															<div class="logmod__alter-container">
-																<div class="connect facebook">              
-																</div>
-																<div class="connect googleplus">       
-																</div>
-															</div>
-														</div>
 										  			</form>
 												</div> 
 									  		</div>
@@ -137,14 +122,6 @@
 														</div> 
 										 			</form>
 												</div> 
-												<div class="logmod__alter">
-										  			<div class="logmod__alter-container">
-														<div class="connect facebook">              
-														</div>
-														<div class="connect googleplus">       
-														</div>
-										 			</div>
-												</div>
 										  	</div>
 									  	</div>
 									</div>
@@ -199,21 +176,21 @@
 													</div>
 													<div class="sminputs">
 										  				<div class="input full">
-															<label class="string optional" for="turnOver" style= "text-align: left;">TurnOver</label>
+															<label class="string optional" for="turnOver" style= "text-align: left;">TurnOver*</label>
 															<input class="string optional" maxlength="255" id="turnOver" name = "turnOver" placeholder="turnOver" type="number" size="50" />
 															<span id = "spnTurnover" style="font-size:10px;"></span>
 														</div>
 													</div>
 													<div class="sminputs">
 										  				<div class="input full">
-															<label class="string optional" for="employeeStrength" style= "text-align: left;">Employee Strength</label>
+															<label class="string optional" for="employeeStrength" style= "text-align: left;">Employee Strength*</label>
 															<input class="string optional" maxlength="255" id="employeeStrength" name = "employeeStrength" placeholder="Strength" type="number" size="50" />
 															<span id = "spnEmployeeStrength" style="font-size:10px;"></span>
 										  				</div>
 													</div>
 													<div class="sminputs">
 														<div class="input full">
-															<label class="string optional" for="logo" style= "text-align: left;">Company Logo(JPEG)</label>
+															<label class="string optional" for="logo" style= "text-align: left;">Company Logo(JPEG)*</label>
 															<input class="string optional" id = "cLogo" type = "file" 
 															value = "Your Company Logo" name = "cLogo">
 															<span id = "spnCLogo" style="font-size:10px;"></span>
@@ -226,14 +203,6 @@
 													</div>
 												</cfform>
 											</div> 
-											<div class="logmod__alter">
-												<div class="logmod__alter-container">
-													<div class="connect facebook">
-													</div>
-													<div class="connect googleplus">
-													</div>
-									  			</div>
-											</div>
 								  		</div>
 								  		<div class="logmod__tab lgm-2">
 											<div class="logmod__heading">
@@ -271,7 +240,7 @@
 													</div>
 													<div class="sminputs">
 										  				<div class="input full">
-															<label class="string optional" for="uPhoto" style= "text-align: left;">Your Photo(JPEG)</label>
+															<label class="string optional" for="uPhoto" style= "text-align: left;">Your Photo(JPEG)*</label>
 															<input class="string optional" id = "uPhoto" type = "file" value = "Your Photo" name = "userPhoto">
 															<span id = "spnUPhoto" style="font-size:10px;"></span>
 														</div>
@@ -283,14 +252,6 @@
 													</div>
 									  			</form>
 											</div> 
-											<div class="logmod__alter">
-									 			 <div class="logmod__alter-container">
-													<div class="connect facebook">
-										  			</div>
-													<div class="connect googleplus">
-										 			</div>
-									  			</div>
-											</div>
 									 	</div>
 								 	</div>
 								</div>
@@ -300,7 +261,6 @@
 				</div>
 			</div>
 		</section>
-
 		<!-- Footer -->
 		<footer id="footer">
 			<div class="container">

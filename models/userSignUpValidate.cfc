@@ -5,7 +5,7 @@
 			SELECT * FROM USERSINFO WHERE userEmail = '#FORM.userEmail#'
 		</cfquery>
 		
-		<cfif getUser.recordCount >= 1 >
+		<cfif getUser.recordCount GT 0 >
 			<cfset arrayAppend(VARIABLES.errorMessageArray,' User already exists!')/>
 		<cfelse>
 			<cfif FORM.userName EQ "" OR len(FORM.userName) GT 30>

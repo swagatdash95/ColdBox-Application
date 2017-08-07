@@ -4,16 +4,16 @@
 			<cftry>
 				<cffile action="upload" destination= #ExpandPath('./includes/images/companyLogo')# filefield="cLogo" nameconflict="makeunique" accept="image/jpeg" result="photoResult">
 			<cfcatch type="any">
-			   		<!--- file is not written to disk if error is thrown  --->
-			    	<!--- prevent invalid file types --->
+			   		<!-- file is not written to disk if error is thrown  -->
+			    	<!-- prevent invalid file types -->
 			    	<cfif FindNoCase("The MIME type or the Extension of the uploaded file", cfcatch.message)>
 			        	<cfabort showerror="<b>Invalid file type.Please Upload JPEG file only</b>" />
 
-			    	<!--- prevent empty form field --->
+			    	<!-- prevent empty form field -->
 			   		<cfelseif FindNoCase("did not contain a file.", cfcatch.message)>
 			        	<cfabort showerror="<b>Empty form field. Please Upload a File!</b>" />
 
-			    	<!---all other errors --->
+			    	<!--all other errors -->
 			    	
 			    	<cfelse>
 			        	<cfabort showerror="<b>File Upload Error</b>" />

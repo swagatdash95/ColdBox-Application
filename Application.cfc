@@ -28,7 +28,7 @@ component{
 	COLDBOX_APP_KEY 		 = "";
 
 	public void function onError(required any exception,required string eventName){
-		include "views/thankyou.cfm";
+		include "views/sorry.cfm";
 	}
 	// application start
 	public boolean function onApplicationStart(){

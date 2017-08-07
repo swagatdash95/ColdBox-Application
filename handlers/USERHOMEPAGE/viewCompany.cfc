@@ -9,7 +9,6 @@ component extends="coldbox.system.EventHandler"{
 
                 prc.companyId = result["companyId"];
                 prc.companyName = result["companyName"];
-                prc.companyAvgRating = result["averageRating"];
                 prc.companyTurnOver = result["turnOver"];
                 prc.companyLogoURL = result["companyLogoURL"];
                 prc.companyEmployeeStrength = result["employeeStrength"];

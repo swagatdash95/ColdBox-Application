@@ -144,6 +144,9 @@
 		*/
 
 	}
+	function onException() {
+  		throw( object=interceptData.exception);
+	}
 
 	/**
 	* Development environment

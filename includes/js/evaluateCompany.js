@@ -125,7 +125,63 @@ $(document).ready(function(){
 					$("#spnTurnover").text("");
 				}
 			});
+	$("#turnOver").click(function(event){
+				var t = $("#turnOver").val();
+				if(t.length>30)
+				{
+					alert("Can not enter more than 30 characters");
+				}
+				else
+				if($.trim(t)==="")
+				{
+					$("#spnTurnover").css("color","red");
+					$("#spnTurnover").text("cant Enter just spaces");
+				}
+				else
+				if(t <= 0)
+				{
+					$("#spnTurnover").css("color","red");
+					$("#spnTurnover").text("Enter a Valid number!");
+				}
+				else
+				{
+					$("#spnTurnover").text("");
+
+				}
+				if(t==="")
+				{
+					$("#spnTurnover").text("");
+				}
+			});
 	$("#employeeStrength").keyup(function(event){
+				var m = $("#employeeStrength").val();
+				if(m.length>30)
+				{
+					alert("Can not enter more than 30 characters");
+				}
+				else
+				if($.trim(m)==="")
+				{
+					$("#spnEmployeeStrength").css("color","red");
+					$("#spnEmployeeStrength").text("cant Enter just spaces");
+				}
+				else
+				if(m <= 0)
+				{
+					$("#spnEmployeeStrength").css("color","red");
+					$("#spnEmployeeStrength").text("Enter a Valid Number!");
+				}
+				else
+				{
+					$("#spnEmployeeStrength").text("");
+
+				}
+				if(m==="")
+				{
+					$("#spnEmployeeStrength").text("");
+				}
+			});
+	$("#employeeStrength").click(function(event){
 				var m = $("#employeeStrength").val();
 				if(m.length>30)
 				{

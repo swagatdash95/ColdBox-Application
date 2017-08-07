@@ -9,7 +9,6 @@ property name = "company" inject = "ADMINHOMEPAGE.delVacancy";
             if(ArrayIsEmpty(result))
             {
             res = company.delVacancyDetails();
-            if(!res)
                 if(!res)
                 {
                    prc.errorMessage[1]="Job Doesn't Exist!";    

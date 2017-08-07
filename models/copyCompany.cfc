@@ -1,8 +1,8 @@
 <cfcomponent displayname = "Database">
 	<cffunction name="deleteUser" access="public" returntype="boolean" >
 	   	<cfQuery datasource="ColdBoxDemoProject">
-			INSERT INTO COMPANYINFO (companyName, averageRating, turnOver, companyLogoURL, employeeStrength, aboutUs, contactUs, companyEmail, password)
-			SELECT companyName, averageRating, turnOver, companyLogoURL, employeeStrength, aboutUs, contactUs, companyEmail, password
+			INSERT INTO COMPANYINFO (companyName, turnOver, companyLogoURL, employeeStrength, aboutUs, contactUs, companyEmail, password)
+			SELECT companyName, turnOver, companyLogoURL, employeeStrength, aboutUs, contactUs, companyEmail, password
 			FROM TEMPCOMPANYDATA
 			WHERE companyEmail = '#SESSION.formEmail#'
 		</cfQuery>

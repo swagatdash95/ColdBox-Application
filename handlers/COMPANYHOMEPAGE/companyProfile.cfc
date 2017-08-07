@@ -5,7 +5,6 @@ property name = "company" inject = "ADMINHOMEPAGE.companyProfile";
         if(SESSION.loggedin)
         {
 	    	result = company.getCompanyDetails();
-	            prc.companyAvgRating = result["averageRating"];
 	            prc.companyTurnOver = result["turnOver"];
 	            prc.companyEmployeeStrength = result["employeeStrength"];
 	            prc.companyAboutUs = result["aboutUs"];

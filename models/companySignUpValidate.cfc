@@ -4,7 +4,7 @@
 		<cfquery name="getCompany" datasource="ColdBoxDemoProject">
 			SELECT * FROM COMPANYINFO WHERE companyEmail = '#FORM.companyEmail#'
 		</cfquery>
-		<cfif getCompany.recordCount >= 1 >
+		<cfif getCompany.recordCount GT 0 >
 			<cfset arrayAppend(VARIABLES.errorMessageArray,' User already exists!')/>
 		<cfelse>
 			<cfif FORM.companyname EQ "" OR len(FORM.companyname) GT 30>

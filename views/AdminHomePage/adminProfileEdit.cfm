@@ -23,10 +23,10 @@
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
            <li><a href="index.cfm?event=COMPANYHOMEPAGE.companyhomepage">Home</a></li>
           <li><a href="index.cfm?event=COMPANYHOMEPAGE.getFeedbacks">Feedbacks</a></li>
-          <li><a href="index.cfm?event=COMPANYHOMEPAGE.companyProfile">My Profile</a></li>
+          <li class="selected"><a href="index.cfm?event=COMPANYHOMEPAGE.companyProfile">My Profile</a></li>
           <li><a href="index.cfm?event=COMPANYHOMEPAGE.viewVacancy">Add/Del Vacancy</a></li>
           <li><a href="index.cfm?event=COMPANYHOMEPAGE.viewProject">Add/Del Project</a></li>
-          <li class="selected"><a href="index.cfm?event=COMPANYHOMEPAGE.viewLocation">Add/Del Locations</a></li>
+          <li><a href="index.cfm?event=COMPANYHOMEPAGE.viewLocation">Add/Del Locations</a></li>
           <li><a href="index.cfm?event=logOut">Logout</a></li>
         </ul>
       </div>
