@@ -1,3 +1,4 @@
+# ColdBox-Application
 This is a project where an user register and logs in to get the details of the IT companies reggarding theie, turnover, employee strength, locatitions, Projects,
 Vacancies , add feedbacks for companies etc.
 An user can also regoster as an company admin and hence add his/her company data into the website.By Which, he will be able to add the emial, and other datas 
